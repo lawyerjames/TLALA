@@ -61,14 +61,19 @@ a {
   min-width: 0;
 }
 
-.brand-mark {
-  display: grid;
-  place-items: center;
-  width: 42px;
-  height: 42px;
-  border: 1px solid currentColor;
+.brand-logo {
+  width: 46px;
+  height: 46px;
+  flex: 0 0 46px;
+  object-fit: cover;
   border-radius: 50%;
-  font-weight: 800;
+  background: #fff;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.72);
+}
+
+.site-header.is-scrolled .brand-logo,
+.site-header.is-open .brand-logo {
+  box-shadow: 0 0 0 1px rgba(20, 32, 41, 0.12);
 }
 
 .brand strong,
@@ -462,9 +467,10 @@ h3 {
     display: none;
   }
 
-  .brand-mark {
+  .brand-logo {
     width: 38px;
     height: 38px;
+    flex-basis: 38px;
   }
 
   .hero-content {

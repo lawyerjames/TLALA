@@ -9,6 +9,7 @@ index.html
 assets/
   css/styles.css
   images/hero-land-law.png
+  images/TLALA_LOGO.jpg
   js/main.js
 ```
 
