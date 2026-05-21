@@ -10,8 +10,17 @@ assets/
   css/styles.css
   images/hero-land-law.png
   images/TLALA_LOGO.jpg
+  images/TLALA_LOGO_circle.png
+  images/TLALA_LOGO_circle_180.png
   js/main.js
 ```
+
+## LOGO 檔案
+
+- `TLALA_LOGO.jpg`：使用者提供的方形原始 LOGO。
+- `assets/images/TLALA_LOGO.jpg`：網站使用的方形版備份。
+- `assets/images/TLALA_LOGO_circle.png`：512x512 透明背景圓形版，適合網站、社群頭像與一般圖示。
+- `assets/images/TLALA_LOGO_circle_180.png`：180x180 透明背景圓形版，供 Apple touch icon 使用。
 
 ## GitHub Pages 部署
 
