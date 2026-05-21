@@ -6,6 +6,10 @@
 
 ```text
 index.html
+about.html
+focus.html
+events.html
+contact.html
 assets/
   css/styles.css
   images/hero-land-law.png
