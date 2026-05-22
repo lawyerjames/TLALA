@@ -243,20 +243,6 @@ h3 {
   border-color: var(--navy);
 }
 
-.quick-facts {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 1px;
-  background: var(--line);
-  border-bottom: 1px solid var(--line);
-}
-
-.quick-facts article {
-  background: var(--surface);
-  padding: 24px clamp(18px, 3vw, 34px);
-}
-
-.quick-facts span,
 .contact-card span {
   display: block;
   margin-bottom: 5px;
@@ -264,7 +250,6 @@ h3 {
   font-size: 0.9rem;
 }
 
-.quick-facts strong,
 .contact-card strong {
   display: block;
   font-size: 1.06rem;
@@ -292,7 +277,6 @@ h3 {
   font-size: 1.18rem;
 }
 
-.intro-grid,
 .split,
 .resources,
 .contact {
@@ -320,38 +304,6 @@ h3 {
 .section-heading {
   max-width: 760px;
   margin-bottom: 36px;
-}
-
-.feature-links {
-  display: grid;
-  gap: 12px;
-}
-
-.feature-links a {
-  display: grid;
-  grid-template-columns: 56px 1fr;
-  gap: 4px 18px;
-  padding: 22px;
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  text-decoration: none;
-  box-shadow: 0 10px 28px rgba(20, 32, 41, 0.06);
-}
-
-.feature-links span {
-  grid-row: span 2;
-  color: var(--gold);
-  font-weight: 900;
-}
-
-.feature-links strong {
-  font-size: 1.24rem;
-}
-
-.feature-links small {
-  color: var(--ink-soft);
-  font-size: 0.95rem;
 }
 
 .focus-grid,
@@ -395,7 +347,8 @@ h3 {
 }
 
 .news-list time,
-.timeline time {
+.timeline time,
+.poster-grid time {
   color: var(--green);
   font-weight: 900;
 }
@@ -414,6 +367,37 @@ h3 {
 
 .timeline p {
   margin-bottom: 0;
+}
+
+.poster-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.poster-grid article {
+  overflow: hidden;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 10px 28px rgba(20, 32, 41, 0.06);
+}
+
+.poster-grid img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: top center;
+  background: var(--mist);
+}
+
+.poster-grid div {
+  padding: 18px;
+}
+
+.poster-grid h3 {
+  margin: 6px 0 0;
 }
 
 .resources {
@@ -532,10 +516,9 @@ h3 {
     min-height: 46px;
   }
 
-  .quick-facts,
-  .intro-grid,
   .focus-grid,
   .news-list,
+  .poster-grid,
   .split,
   .resources,
   .contact {
@@ -574,7 +557,6 @@ h3 {
     width: min(100% - 32px, 1100px);
   }
 
-  .quick-facts,
   .timeline article,
   .profile-table div {
     grid-template-columns: 1fr;
