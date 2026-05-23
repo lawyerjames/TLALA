@@ -958,15 +958,17 @@ h3 {
   .hero-content {
     left: 16px;
     right: 16px;
-    bottom: 16px;
+    top: 18px;
+    bottom: auto;
+    max-width: none;
   }
 
   .hero {
-    min-height: 560px;
+    min-height: 680px;
   }
 
   .hero-image {
-    height: 560px;
+    height: 680px;
   }
 
   .hero-org-name {
