@@ -1010,6 +1010,64 @@ h3 {
     grid-template-columns: 1fr;
   }
 
+  .directors-page .table-wrap {
+    overflow: visible;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .directors-page .member-table,
+  .directors-page .member-table tbody,
+  .directors-page .member-table tr,
+  .directors-page .member-table td {
+    display: block;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .directors-page .member-table {
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+
+  .directors-page .member-table thead {
+    display: none;
+  }
+
+  .directors-page .member-table tr {
+    margin-bottom: 14px;
+    padding: 16px 18px;
+    border: 1px solid var(--line);
+    border-top: 4px solid var(--gold);
+    border-radius: 8px;
+    background: var(--surface);
+    box-shadow: 0 10px 24px rgba(20, 32, 41, 0.07);
+  }
+
+  .directors-page .member-table td {
+    display: grid;
+    grid-template-columns: 74px minmax(0, 1fr);
+    gap: 12px;
+    padding: 7px 0;
+    border-bottom: 1px solid rgba(216, 222, 215, 0.75);
+    word-break: break-word;
+  }
+
+  .directors-page .member-table td::before {
+    content: attr(data-label);
+    color: var(--ink-soft);
+    font-weight: 900;
+  }
+
+  .directors-page .member-table td:first-child {
+    display: none;
+  }
+
+  .directors-page .member-table td:last-child {
+    border-bottom: 0;
+  }
+
   .profile-table dt {
     padding-bottom: 6px;
   }
