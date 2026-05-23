@@ -163,7 +163,9 @@ a {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(20, 32, 41, 0.52) 0%, rgba(20, 32, 41, 0.22) 45%, rgba(20, 32, 41, 0.1) 100%);
+  background:
+    linear-gradient(90deg, rgba(13, 27, 35, 0.78) 0%, rgba(13, 27, 35, 0.58) 42%, rgba(13, 27, 35, 0.22) 100%),
+    linear-gradient(180deg, rgba(13, 27, 35, 0.34) 0%, rgba(13, 27, 35, 0.08) 46%, rgba(13, 27, 35, 0.35) 100%);
   pointer-events: none;
 }
 
@@ -188,7 +190,8 @@ a {
 }
 
 .hero-content .eyebrow {
-  color: #8fd0ff;
+  color: #9bd8ff;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
 }
 
 .hero-title {
@@ -197,10 +200,11 @@ a {
 
 .hero-org-name {
   display: block;
-  color: #e8c987;
+  color: #f1d48f;
   font-size: clamp(2.1rem, 5vw, 3.4rem);
   line-height: 1.08;
   font-weight: 900;
+  text-shadow: 0 3px 18px rgba(0, 0, 0, 0.42);
 }
 
 .hero-tagline {
@@ -209,11 +213,13 @@ a {
   font-size: clamp(1.4rem, 3.1vw, 2.35rem);
   line-height: 1.2;
   font-weight: 700;
+  text-shadow: 0 3px 16px rgba(0, 0, 0, 0.42);
 }
 
 .hero-content .lead {
   max-width: 760px;
-  color: rgba(255, 255, 255, 0.92);
+  color: rgba(255, 255, 255, 0.96);
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.42);
 }
 
 .hero-lead-mobile {
@@ -966,24 +972,30 @@ h3 {
   .hero-content {
     left: 16px;
     right: 16px;
-    top: 24px;
-    bottom: auto;
+    top: auto;
+    bottom: 34px;
     max-width: none;
   }
 
   .hero::after {
     background:
-      linear-gradient(180deg, rgba(13, 27, 35, 0.9) 0%, rgba(13, 38, 43, 0.7) 48%, rgba(13, 38, 43, 0.38) 100%),
-      linear-gradient(90deg, rgba(20, 32, 41, 0.72), rgba(20, 32, 41, 0.18));
+      radial-gradient(circle at 84% 22%, rgba(180, 134, 67, 0.26), rgba(180, 134, 67, 0) 30%),
+      linear-gradient(120deg, #132838 0%, #16324f 48%, #2f6f5e 100%);
   }
 
   .hero {
-    min-height: 400px;
+    min-height: 360px;
+    background:
+      radial-gradient(circle at 84% 22%, rgba(180, 134, 67, 0.26), rgba(180, 134, 67, 0) 30%),
+      linear-gradient(120deg, #132838 0%, #16324f 48%, #2f6f5e 100%);
+  }
+
+  .hero-picture {
+    display: none;
   }
 
   .hero-image {
-    height: 400px;
-    object-position: center top;
+    height: 360px;
   }
 
   .hero-content .eyebrow {
@@ -1000,7 +1012,7 @@ h3 {
   }
 
   .hero-tagline {
-    max-width: 12em;
+    max-width: 13em;
     font-size: 1.34rem;
     line-height: 1.34;
   }
